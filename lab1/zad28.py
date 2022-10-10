@@ -7,7 +7,9 @@ randomlist2 = []
 print(f"Lista z polecenia: {randomlist}")
 
 for x in randomlist:
-    if x not in randomlist2:
-        randomlist2.append(x)
+    if randomlist.count(x) == 1:
+        if x not in randomlist2:
+            randomlist2.append(x)
 
+randomlist2.sort()
 print(f"Lista bez duplikatow: {randomlist2}")
