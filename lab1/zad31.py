@@ -8,6 +8,5 @@ for x in randomlist:
     if x > 27:
         randomlist2.append(x)
 
-print(randomlist2)
 print(len(randomlist2))
 

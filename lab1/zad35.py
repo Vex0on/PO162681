@@ -7,7 +7,7 @@ randomlist2 = []
 a = int(input("Podaj a: "))
 b = int(input("Podaj b: "))
 for x in randomlist:
-    if x > a and x < b:
+    if a <= x <= b:
         randomlist2.append(x)
 
 # print(randomlist2)
