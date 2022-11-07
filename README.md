@@ -34,10 +34,13 @@
 
 ### Słowniki
 ### Listy_zbiory
-### Arg_funkcji
 
 
 
 ## [Lab 2](https://github.com/Vex0on/PO162681/tree/main/lab2)
+
+## Wykład Lab2
+
+### Arg_funkcji
 
 ## [Lab 3](https://github.com/Vex0on/PO162681/tree/main/lab3)
