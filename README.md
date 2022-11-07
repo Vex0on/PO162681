@@ -1,6 +1,7 @@
 # PO162681
 
 ## [Lab 1](https://github.com/Vex0on/PO162681/tree/main/lab1)
+###Z5-9 Podstawowe operacje na listach
 
 ## [Lab 2](https://github.com/Vex0on/PO162681/tree/main/lab2)
 
