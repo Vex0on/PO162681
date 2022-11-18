@@ -30,7 +30,7 @@
 - [ ] Z48 Część wspólna zbiorów
 - [ ] Z49 Liczba elementów w zbiorze (bez gotowej funkcji)
 
-## [Wykład Lab1] (https://github.com/Vex0on/PO162681/tree/main/lab1/wykład)
+## [Wykład Lab1](https://github.com/Vex0on/PO162681/tree/main/lab1/wykład)
 
 ### Słowniki
 - [ ] Z1(a-d) Wczytywanie pliku i operacja na zawartym w nim łańcuchu znaków
