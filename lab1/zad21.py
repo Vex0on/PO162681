@@ -16,7 +16,7 @@ def tab_create(number, tab):
     for i in tab:
         result = i
         result += 1
-        if result <= 50:
+        if result <= 1000:
             tab.append(result)
     return tab
 
@@ -26,7 +26,7 @@ def triple_mult_tab(number, pow1, tab):
     for i in tab:
         result = i
         result *= pow1
-        if result <= 50:
+        if result <= 1000:
             tab.append(result)
     return tab
 
