@@ -57,4 +57,4 @@ class Court:
 def validate(court: Court):
     year = datetime.datetime.today().year
     if 0 < court.get_year_built() > year:
-        court.set_year_built(court.get_year_built()) == year
+        court.set_year_built(year)
