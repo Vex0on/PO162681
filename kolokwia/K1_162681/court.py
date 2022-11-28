@@ -42,10 +42,10 @@ class Court:
         return self.__width * self.__length
 
     def __str__(self):
-        return f'Boisko wybudowane w roku {self.set_year_built(1999)}, o długości {self.set_length(100)} metrów i ' \
-               f'szerokości {self.set_width(50)} metrów. \n ' \
-               f'Pole powierzchni: {self.area()} mkw. \n ' \
-               f'Adres: {self.set_address("Słoneczna 10, 10-100 Olsztyn")}.'
+        return f'Boisko wybudowane w roku {self.get_year_built()}, o długości {self.get_length()} metrów i ' \
+               f'szerokości {self.get_width()} metrów. \n' \
+               f'Pole powierzchni: {self.area()} mkw. \n' \
+               f'Adres: {self.get_address()}.'
 
     def __eq__(self, other):
         return self.area() == other.area()
