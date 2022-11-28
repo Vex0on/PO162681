@@ -15,20 +15,20 @@
 - [x] Z21 Dodawanie do listy i usuwanie wielokrotności
 
 ### Random
-- [ ] Z21-26 Suma, minmax, mediana, sortowanie, print
-- [ ] Z27-30 Wypisywanie 3-cyfrowych, max powtórzeń, bez powtórzeń, powtórka równo 3 razy
-- [ ] Z31 >34, 3xminmax, usuwanie duplikatów, how_often
+- [x] Z21-26 Suma, minmax, mediana, sortowanie, print
+- [x] Z27-30 Wypisywanie 3-cyfrowych, max powtórzeń, bez powtórzeń, powtórka równo 3 razy
+- [x] Z31 >34, 3xminmax, usuwanie duplikatów, how_often
 - [x] Z35-37 Wartość w przedziale, parzysta, nieparzysta
-- [ ] Z38 Przenoszenie na liście parz na lewo, nieparz na prawo (posegregowane)
+- [x] Z38 Przenoszenie na liście parz na lewo, nieparz na prawo (posegregowane)
 
 ### Dalsze zadania
 - [ ] Z39-41 Podstawowe operacje na słownikach
 - [ ] Z42 Dziesiętna na Rzymską
-- [ ] Z43-45 Podstawowe operacje na krotkach
-- [ ] Z46 Wypisywanie zbiorów elementu
-- [ ] Z47 Mergowanie zbiorów
-- [ ] Z48 Część wspólna zbiorów
-- [ ] Z49 Liczba elementów w zbiorze (bez gotowej funkcji)
+- [x] Z43-45 Podstawowe operacje na krotkach
+- [x] Z46 Wypisywanie zbiorów elementu
+- [x] Z47 Mergowanie zbiorów
+- [x] Z48 Część wspólna zbiorów
+- [x] Z49 Liczba elementów w zbiorze (bez gotowej funkcji)
 
 ## [Wykład Lab1](https://github.com/Vex0on/PO162681/tree/main/lab1/wykład)
 
@@ -44,9 +44,16 @@
 
 
 ## [Lab 2](https://github.com/Vex0on/PO162681/tree/main/lab2)
-
+- [x] Z1-3 Macierze dwuwymiarowe
+- [x] Z4-Z9 Powtórka z lab1
 ## Wykład Lab2
 
 ### Arg_funkcji
 
 ## [Lab 3](https://github.com/Vex0on/PO162681/tree/main/lab3)
+- [x] Z1 Klasa przechowująca dane i obiekty tej klasy
+- [x] Z2 Klasa coin z metodami throw() i show_side()
+- [x] Z3 Klasa Rectangle (inicjalizacja, metoda, dodawanie do listy)
+- [x] Z4 Klasa Stat (inicjalizacja listą, metody: suma, min, max)
+
+## [Wykład Lab3](https://github.com/Vex0on/PO162681/tree/main/lab3/wykład)
