@@ -14,15 +14,19 @@ class Court:
         self.__address = str(address)
         self.__year_built = int(year_built)
 
+    # @property
     def get_width(self) -> float:
         return self.__width
 
+    # @property
     def get_length(self) -> float:
         return self.__length
 
+    # @property
     def get_address(self) -> str:
         return self.__address
 
+    # @property
     def get_year_built(self) -> int:
         return self.__year_built
 
@@ -48,10 +52,10 @@ class Court:
                f'Adres: {self.get_address()}.'
 
     def __eq__(self, other):
-        return self.area() == other.area()
+        return self.__length == other.length
 
     def __ne__(self, other):
-        return self.area() != other.area()
+        return self.__width != other.width
 
 
 def validate(court: Court):
