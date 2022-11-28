@@ -2,7 +2,7 @@ import datetime
 
 
 class Court:
-    def __init__(self, width=68, length=150, address="", year_built=0):
+    def __init__(self, width: float = 68, length: float = 150, address: str = "", year_built: int = 0):
         if 45 > width > 90 or 90 > length < 120:
             width = 70
             length = 75
