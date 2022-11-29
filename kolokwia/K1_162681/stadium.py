@@ -9,30 +9,43 @@ class Stadium(Court):
         self.__common_name = common_name
         self.__capacity = capacity
 
-    def get_name(self) -> str:
+    @property
+    def name(self) -> str:
         return self.__name
 
-    def get_common_name(self) -> str:
+    @name.setter
+    def name(self, value: str) -> None:
+        self.__name = value
+
+    @property
+    def common_name(self) -> str:
         return self.__common_name
 
-    def get_capacity(self) -> int:
+    @common_name.setter
+    def common_name(self, value: str) -> None:
+        self.__common_name = value
+
+    @property
+    def capacity(self) -> int:
         return self.__capacity
 
-    def set_name(self, x):
-        self.__name = str(x)
-
-    def set_common_name(self, x):
-        self.__common_name = str(x)
-
-    def set_capacity(self, x):
-        self.__capacity = int(x)
+    @capacity.setter
+    def capacity(self, value: int) -> None:
+        self.__capacity = value
 
     def __str__(self):
-        return f'Boisko wybudowane w roku {self.get_year_built()}, o długości {self.get_length()} metrów i ' \
-               f'szerokości {self.get_width()} metrów. \n' \
+        return f'Boisko wybudowane w roku {self.year_built}, o długości {self.length} metrów i ' \
+               f'szerokości {self.width} metrów. \n' \
                f'Pole powierzchni: {self.area()} mkw. \n' \
-               f'Adres: {self.get_address()}. \n' \
-               f'Nazwa: {self.get_name()} \n' \
-               f'Nazwa zwyczajowa: {self.__common_name} \n' \
-               f'Pojemność stadionu: {self.__capacity}.'
+               f'Adres: {self.address}. \n' \
+               f'Nazwa: {self.name} \n' \
+               f'Nazwa zwyczajowa: {self.common_name} \n' \
+               f'Pojemność stadionu: {self.capacity}.'
 
+    def __eq__(self, other):
+        self.area() == other.area
+        self.capacity == other.capacity
+
+    def __ne__(self, other):
+        self.area() != other.area
+        self.capacity != other.capacity
