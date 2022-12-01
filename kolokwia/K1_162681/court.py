@@ -3,7 +3,7 @@ import datetime
 
 class Court:
     def __init__(self, width: float = 68, length: float = 150, address: str = "", year_built: int = 0) -> None:
-        if 45 > width > 90 or 90 > length < 120:
+        if 45 > width or width > 90 or 90 > length or length > 120:
             width = 70
             length = 75
             self.__width = width
@@ -20,7 +20,10 @@ class Court:
 
     @width.setter
     def width(self, value: float) -> None:
-        self.__width = value
+        if 45 > value or value > 90:
+            print("Nieprawidłowa wartość")
+        else:
+            self.__width = value
 
     @property
     def length(self) -> float:
@@ -28,7 +31,10 @@ class Court:
 
     @length.setter
     def length(self, value: float) -> None:
-        self.__length = value
+        if 90 > value or value > 120:
+            print("Nieprawidłowa wartość")
+        else:
+            self.__length = value
 
     @property
     def address(self) -> str:
