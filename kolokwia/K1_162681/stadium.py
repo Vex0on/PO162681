@@ -31,21 +31,33 @@ class Stadium(Court):
 
     @capacity.setter
     def capacity(self, value: int) -> None:
-        self.__capacity = value
+        if value < 0:
+            self.__capacity
+            print("Podano nieprawidłową wartość")
+        else:
+            self.__capacity = value
 
     def __str__(self):
-        return f'Boisko wybudowane w roku {self.year_built}, o długości {self.length} metrów i ' \
-               f'szerokości {self.width} metrów. \n' \
-               f'Pole powierzchni: {self.area()} mkw. \n' \
-               f'Adres: {self.address}. \n' \
-               f'Nazwa: {self.name} \n' \
-               f'Nazwa zwyczajowa: {self.common_name} \n' \
-               f'Pojemność stadionu: {self.capacity}.'
+        if self.common_name is None:
+            return f'Boisko wybudowane w roku {self.year_built}, o długości {self.length} metrów i ' \
+                   f'szerokości {self.width} metrów. \n' \
+                   f'Pole powierzchni: {self.area()} mkw. \n' \
+                   f'Adres: {self.address}. \n' \
+                   f'Nazwa: {self.name} \n' \
+                   f'Pojemność stadionu: {self.capacity}.'
+        else:
+            return f'Boisko wybudowane w roku {self.year_built}, o długości {self.length} metrów i ' \
+                   f'szerokości {self.width} metrów. \n' \
+                   f'Pole powierzchni: {self.area()} mkw. \n' \
+                   f'Adres: {self.address}. \n' \
+                   f'Nazwa: {self.name} \n' \
+                   f'Nazwa zwyczajowa: {self.common_name} \n' \
+                   f'Pojemność stadionu: {self.capacity}.'
 
     def __eq__(self, other):
-        self.area() == other.area
+        self.area() == other.area()
         self.capacity == other.capacity
 
     def __ne__(self, other):
-        self.area() != other.area
+        self.area() != other.area()
         self.capacity != other.capacity

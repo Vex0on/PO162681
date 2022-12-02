@@ -21,7 +21,7 @@ class Court:
     @width.setter
     def width(self, value: float) -> None:
         if 45 > value or value > 90:
-            print("Nieprawidłowa wartość")
+            self.__width
         else:
             self.__width = value
 
@@ -32,7 +32,7 @@ class Court:
     @length.setter
     def length(self, value: float) -> None:
         if 90 > value or value > 120:
-            print("Nieprawidłowa wartość")
+            self.__length
         else:
             self.__length = value
 
