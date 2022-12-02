@@ -7,7 +7,11 @@ class Stadium(Court):
         super().__init__(width, length, address, year_built)
         self.__name = name
         self.__common_name = common_name
-        self.__capacity = capacity
+        if capacity < 0:
+            capacity = 0
+            self.__capacity = capacity
+        else:
+            self.__capacity = capacity
 
     @property
     def name(self) -> str:
