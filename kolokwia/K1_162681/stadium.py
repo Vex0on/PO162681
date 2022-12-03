@@ -2,8 +2,12 @@ from court import Court
 
 
 class Stadium(Court):
-    def __init__(self, width: float, length: float, address: str, year_built: int, name: str, capacity: int = 0,
-                 common_name: str = None) -> None:
+    __name: str
+    __common_name: str
+    __capacity: int
+
+    def __init__(self, width: float = 68, length: float = 150, address: str = "", year_built: int = 0, name: str = "",
+                 capacity: int = 0, common_name: str = None) -> None:
         super().__init__(width, length, address, year_built)
         self.__name = name
         self.__common_name = common_name
@@ -37,7 +41,7 @@ class Stadium(Court):
     def capacity(self, value: int) -> None:
         if value < 0:
             self.__capacity
-            print("Podano nieprawidłową wartość")
+            print("Podano nieprawidłową wartość pojemności. \n")
         else:
             self.__capacity = value
 
@@ -47,21 +51,20 @@ class Stadium(Court):
                    f'szerokości {self.width} metrów. \n' \
                    f'Pole powierzchni: {self.area()} mkw. \n' \
                    f'Adres: {self.address}. \n' \
-                   f'Nazwa: {self.name} \n' \
+                   f'Nazwa: {self.name}. \n' \
                    f'Pojemność stadionu: {self.capacity}.'
         else:
             return f'Boisko wybudowane w roku {self.year_built}, o długości {self.length} metrów i ' \
                    f'szerokości {self.width} metrów. \n' \
                    f'Pole powierzchni: {self.area()} mkw. \n' \
                    f'Adres: {self.address}. \n' \
-                   f'Nazwa: {self.name} \n' \
-                   f'Nazwa zwyczajowa: {self.common_name} \n' \
+                   f'Nazwa: {self.name}. \n' \
+                   f'Nazwa zwyczajowa: {self.common_name}. \n' \
                    f'Pojemność stadionu: {self.capacity}.'
 
     def __eq__(self, other):
-        self.area() == other.area()
-        self.capacity == other.capacity
+        return self.capacity == other.capacity and self.area() == other.area()
 
     def __ne__(self, other):
-        self.area() != other.area()
-        self.capacity != other.capacity
+        return self.capacity != other.capacity and self.area() != other.area()
+

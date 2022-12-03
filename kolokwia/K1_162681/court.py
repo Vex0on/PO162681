@@ -2,10 +2,15 @@ import datetime
 
 
 class Court:
+    __width: float
+    __length: float
+    __address: str
+    __year_built: int
+
     def __init__(self, width: float = 68, length: float = 150, address: str = "", year_built: int = 0) -> None:
         if 45 > width or width > 90 or 90 > length or length > 120:
-            width = 70
-            length = 75
+            width = 68
+            length = 150
             self.__width = width
             self.__length = length
         else:
@@ -50,7 +55,11 @@ class Court:
 
     @year_built.setter
     def year_built(self, value: int) -> None:
-        self.__year_built = value
+        if value < 0:
+            self.__year_built
+            print("Podano nieprawidłową wartość roku wybudowania. \n")
+        else:
+            self.__year_built = value
 
     def area(self) -> float:
         return self.__width * self.__length
@@ -70,5 +79,5 @@ class Court:
 
 def validate(court: Court) -> None:
     year = datetime.datetime.today().year
-    if 0 < court.year_built > year:
+    if 0 > court.year_built or court.year_built > year:
         court.year_built = year
