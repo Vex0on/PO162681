@@ -60,11 +60,11 @@ class Stadium(Court):
                    f'Adres: {self.address}. \n' \
                    f'Nazwa: {self.name}. \n' \
                    f'Nazwa zwyczajowa: {self.common_name}. \n' \
-                   f'Pojemność stadionu: {self.capacity}.'
+                   f'Pojemność stadionu: {self.capacity} osób.'
 
     def __eq__(self, other):
-        return self.capacity == other.capacity and self.area() == other.area()
+        return self.capacity == other.capacity or self.area() == other.area()
 
     def __ne__(self, other):
-        return self.capacity != other.capacity and self.area() != other.area()
+        return self.capacity != other.capacity or self.area() != other.area()
 

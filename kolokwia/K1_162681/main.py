@@ -1,4 +1,4 @@
-from court import Court, validate
+from court import Court
 from stadium import Stadium
 
 
@@ -22,12 +22,12 @@ def main():
 
     # test walidacji na c2 (data większa niż obecna)
     print(f'{c2} \n')
-    validate(c2)
+    Court.validate(c2)
     print(f'{c2} \n')
 
     # test walidacji na c4 (ujemna data)
     print(f'{c4} \n')
-    validate(c4)
+    Court.validate(c4)
     print(f'{c4} \n')
 
     # test metody __str__ (s2 z podaną nazwą zwyczajową, s1 bez)
