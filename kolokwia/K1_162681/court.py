@@ -1,3 +1,4 @@
+from __future__ import annotations
 import datetime
 
 
@@ -76,8 +77,8 @@ class Court:
     def __ne__(self, other):
         return self.area() != other.area()
 
-
-def validate(court: Court) -> None:
-    year = datetime.datetime.today().year
-    if 0 > court.year_built or court.year_built > year:
-        court.year_built = year
+    @staticmethod
+    def validate(court: Court) -> None:
+        year = datetime.datetime.today().year
+        if 0 > court.year_built or court.year_built > year:
+            court.year_built = year
