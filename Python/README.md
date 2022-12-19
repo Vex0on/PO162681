@@ -1,6 +1,6 @@
 # PO162681
 
-## [Lab 1](https://github.com/Vex0on/PO162681/tree/main/lab1)
+## [Lab 1](https://github.com/Vex0on/PO162681/tree/main/Python/lab1)
 
 ### Podstawy
 - [x] Z5-9 Podstawowe operacje na listach
@@ -30,7 +30,7 @@
 - [x] Z48 Część wspólna zbiorów
 - [x] Z49 Liczba elementów w zbiorze (bez gotowej funkcji)
 
-## [Wykład Lab1](https://github.com/Vex0on/PO162681/tree/main/lab1/wykład)
+## [Wykład Lab1](https://github.com/Vex0on/PO162681/tree/main/Python/lab1/wykład)
 
 ### Słowniki
 - [ ] Z1(a-d) Wczytywanie pliku i operacja na zawartym w nim łańcuchu znaków
@@ -43,17 +43,17 @@
 - [ ] Z10 Funkcja sprawdzająca czy listy są identyczne
 
 
-## [Lab 2](https://github.com/Vex0on/PO162681/tree/main/lab2)
+## [Lab 2](https://github.com/Vex0on/PO162681/tree/main/Python/lab2)
 - [x] Z1-3 Macierze dwuwymiarowe
 - [x] Z4-Z9 Powtórka z lab1
 ## Wykład Lab2
 
 ### Arg_funkcji
 
-## [Lab 3](https://github.com/Vex0on/PO162681/tree/main/lab3)
+## [Lab 3](https://github.com/Vex0on/PO162681/tree/main/Python/lab3)
 - [x] Z1 Klasa przechowująca dane i obiekty tej klasy
 - [x] Z2 Klasa coin z metodami throw() i show_side()
 - [x] Z3 Klasa Rectangle (inicjalizacja, metoda, dodawanie do listy)
 - [x] Z4 Klasa Stat (inicjalizacja listą, metody: suma, min, max)
 
-## [Wykład Lab3](https://github.com/Vex0on/PO162681/tree/main/lab3/wykład)
+## [Wykład Lab3](https://github.com/Vex0on/PO162681/tree/main/Python/lab3/wykład)
