@@ -10,4 +10,3 @@ class Student(Osoba):
         self._rok = rok
         self._nr_gr = nr_gr
         self._nr_albumu = nr_albumu
-        
