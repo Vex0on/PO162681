@@ -13,7 +13,7 @@ public class Main {
         grupa.add(new Osoba("Pikus", LocalDate.of(2000, 9, 17)));
         grupa.add(new Osoba("Sosnowski", LocalDate.of(2001, 3, 31)));
         grupa.add(new Osoba("Kowalski", LocalDate.of(2004, 1, 13)));
-        
+
         // gettery
         System.out.println(grupa.get(0) + "\n");
         System.out.println(grupa.get(1) + "\n");
