@@ -1,5 +1,3 @@
-package E1.Z1.Sosnowski;
-
 import java.time.LocalDate;
 import java.util.Objects;
 
