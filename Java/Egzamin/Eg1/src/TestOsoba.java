@@ -12,6 +12,17 @@ public class TestOsoba {
         grupa.add(new Osoba("Sosnowski", LocalDate.of(2001, 3, 31)));
         grupa.add(new Osoba("Kowalski", LocalDate.of(2004, 1, 13)));
 
+        try {
+            Osoba o1 = grupa.get(0);
+            Osoba o2 = (Osoba) o1.clone();
+            System.out.println(o1);
+            System.out.println(o2);
+
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+
         // gettery
         System.out.println(grupa.get(0) + "\n");
         System.out.println(grupa.get(1) + "\n");

@@ -54,4 +54,9 @@ public class Osoba implements Cloneable, Comparable<Osoba> {
             return 1;
         return 0;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
