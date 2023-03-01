@@ -1,3 +1,5 @@
+package Sosnowski.powtorka.J1;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -27,7 +29,7 @@ public class FileLines {
         lines.forEach(System.out::println);
 
         // Sortowanie najkrótsze -> najdłuższe
-        lines.sort(Comparator.comparingInt(String::length));
+        lines.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
         System.out.println("\n- Sortowanie 2");
         lines.forEach(System.out::println);
 

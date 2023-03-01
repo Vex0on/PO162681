@@ -1,7 +1,8 @@
-import java.time.LocalDate;
-import java.util.Objects;
+package Sosnowski.powtorka.J1;
 
-public class Student extends Osoba implements Comparable<Osoba>, Cloneable{
+import java.time.LocalDate;
+
+public class Student extends Osoba implements Cloneable, Comparable<Osoba>{
 
     private double sredniaOcen;
 
@@ -10,9 +11,8 @@ public class Student extends Osoba implements Comparable<Osoba>, Cloneable{
         this.sredniaOcen = sredniaOcen;
     }
 
-
     public double getSredniaOcen() {
-        return this.sredniaOcen;
+        return sredniaOcen;
     }
 
     public void setSredniaOcen(double sredniaOcen) {
@@ -20,8 +20,9 @@ public class Student extends Osoba implements Comparable<Osoba>, Cloneable{
     }
 
     @Override
-    public String toString() {
-        return "Student[" + getNazwisko() + ", "+ getDataUrodzenia() + ", "  + this.sredniaOcen + ']';
+    public Student clone() {
+        Student clone = (Student) super.clone();
+        return clone;
     }
 
     @Override

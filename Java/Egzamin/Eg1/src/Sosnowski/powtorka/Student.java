@@ -1,4 +1,4 @@
-package Sosnowski.cos2;
+package Sosnowski.powtorka;
 
 public abstract class Student {
     private String name;

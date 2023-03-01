@@ -1,7 +1,9 @@
+package Sosnowski.powtorka.J1;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Osoba implements Cloneable, Comparable<Osoba> {
+public class Osoba implements Cloneable, Comparable<Osoba>{
 
     private String nazwisko;
     private LocalDate dataUrodzenia;
@@ -12,7 +14,7 @@ public class Osoba implements Cloneable, Comparable<Osoba> {
     }
 
     public String getNazwisko() {
-        return this.nazwisko;
+        return nazwisko;
     }
 
     public void setNazwisko(String nazwisko) {
@@ -20,16 +22,17 @@ public class Osoba implements Cloneable, Comparable<Osoba> {
     }
 
     public LocalDate getDataUrodzenia() {
-        return this.dataUrodzenia;
-    }
-
-    @Override
-    public String toString() {
-        return "Osoba[" + this.nazwisko + ", "+ this.dataUrodzenia + ']';
+        return dataUrodzenia;
     }
 
     public void setDataUrodzenia(LocalDate dataUrodzenia) {
         this.dataUrodzenia = dataUrodzenia;
+    }
+
+    @Override
+    public String toString() {
+        return "Osoba[" + nazwisko + ", " + dataUrodzenia + ']';
+
     }
 
     @Override
@@ -45,18 +48,21 @@ public class Osoba implements Cloneable, Comparable<Osoba> {
         return Objects.hash(nazwisko, dataUrodzenia);
     }
 
-
     @Override
-    public int compareTo(Osoba o) {
-        if (!Objects.equals(nazwisko, o.nazwisko))
-            return -1;
-        if (!Objects.equals(dataUrodzenia, o.dataUrodzenia))
-            return 1;
-        return 0;
+    public Osoba clone() {
+        try {
+            return (Osoba) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public int compareTo(Osoba o) {
+        int compareNazwisko = this.getNazwisko().compareTo(o.getNazwisko());
+        if (compareNazwisko != 0) {
+            return compareNazwisko;
+        }
+        return dataUrodzenia.compareTo(o.dataUrodzenia);
     }
 }

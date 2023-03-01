@@ -1,4 +1,4 @@
-package Sosnowski.cos2;
+package Sosnowski.powtorka;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -40,18 +40,20 @@ public class Doktorant extends Student implements Named, Cloneable, Comparable<D
     }
 
     @Override
-    public int compareTo(Doktorant doktorant) {
-        int nameCompare = this.getName().length() - doktorant.getName().length();
+    public int compareTo(Doktorant o) {
+        int nameCompare = this.getName().length() - o.getName().length();
         if (nameCompare != 0)
             return nameCompare;
-        int pointsSum = 0;
-        int doktorantSum = 0;
-        for (int i = 0; i < this.getPoints().size(); i++){
-            pointsSum += this.getPoints().get(i);
+        int pointSum = 0;
+        int doktorSum = 0;
+        for (int i = 0; i < this.getPoints().size(); i++)
+        {
+            pointSum += this.getPoints().get(i);
         }
-        for (int i = 0; i < doktorant.getPoints().size(); i++){
-            doktorantSum += doktorant.getPoints().get(i);
+        for (int j = 0; j < o.getPoints().size(); j++)
+        {
+            doktorSum += o.getPoints().get(j);
         }
-        return Integer.compare(pointsSum, doktorantSum);
+        return Integer.compare(pointSum, doktorSum);
     }
 }
